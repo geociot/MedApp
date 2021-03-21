@@ -8,7 +8,7 @@ public class MedAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MedAppApplication.class, args);
-		System.out.println("Testtt");
+		//System.out.println("Testtt");
 	}
 
 }
