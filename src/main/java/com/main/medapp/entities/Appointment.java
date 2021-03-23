@@ -1,6 +1,6 @@
-package com.main.MedApp.Models;
+package com.main.med_app.entities;
 
-import com.main.MedApp.Enums.AppointmentStatus;
+import com.main.med_app.enums.AppointmentStatus;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -17,7 +17,9 @@ public class Appointment {
     @JoinColumn(name = "medical_specialist_id")
     MedicalSpecialist medicalSpecialist;
 
-    Long idPatient;
+    @ManyToOne
+    @JoinColumn(name = "patient_id")
+    Patient patient;
 
     Timestamp startTime;
     Timestamp endTime;
@@ -29,7 +31,7 @@ public class Appointment {
         return id;
     }
 
-    public void setId() {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,8 +39,16 @@ public class Appointment {
         return medicalSpecialist;
     }
 
-    public Long getIdPatient() {
-        return idPatient;
+    public void setMedicalSpecialist(MedicalSpecialist medicalSpecialist) {
+        this.medicalSpecialist = medicalSpecialist;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
     }
 
     public Timestamp getStartTime() {

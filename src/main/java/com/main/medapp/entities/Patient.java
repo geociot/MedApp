@@ -1,11 +1,10 @@
-package com.main.MedApp.Models;
-import com.main.MedApp.Enums.Speciality;
+package com.main.med_app.entities;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "MedicalSpecialists")
-public class MedicalSpecialist {
+@Table(name = "Patients")
+public class Patient {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -14,13 +13,6 @@ public class MedicalSpecialist {
     String name;
     String surName;
     String email;
-
-    @OneToOne
-    @JoinColumn(name = "location_id")
-    Location location;
-
-    @Enumerated(EnumType.STRING)
-    Speciality speciality;
 
     public Long getId() {
         return id;
@@ -52,13 +44,5 @@ public class MedicalSpecialist {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Speciality getSpeciality() {
-        return speciality;
-    }
-
-    public void setSpeciality(Speciality speciality) {
-        this.speciality = speciality;
     }
 }

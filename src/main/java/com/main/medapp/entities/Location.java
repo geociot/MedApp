@@ -1,4 +1,4 @@
-package com.main.MedApp.Models;
+package com.main.med_app.entities;
 
 import javax.persistence.*;
 

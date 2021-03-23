@@ -1,4 +1,4 @@
-package com.main.MedApp;
+package com.main.med_app;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +10,6 @@ public class CustomStarterLogger {
     private Logger logger = LoggerFactory.getLogger(CustomStarterLogger.class);
 
     public void print(){
-        logger.info("Test 1");
+        logger.info("Application started successfully");
     }
 }
