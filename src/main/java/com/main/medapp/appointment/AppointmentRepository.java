@@ -1,6 +1,5 @@
-package com.main.med_app.repositories;
+package com.main.medapp.appointment;
 
-import com.main.med_app.entities.Appointment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AppointmentRepository extends JpaRepository<Appointment, Integer> {

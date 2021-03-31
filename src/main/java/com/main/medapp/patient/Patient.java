@@ -1,4 +1,4 @@
-package com.main.med_app.entities;
+package com.main.medapp.patient;
 
 import javax.persistence.*;
 
@@ -18,7 +18,7 @@ public class Patient {
         return id;
     }
 
-    public void setId() {
+    public void setId(Long id) {
         this.id = id;
     }
 

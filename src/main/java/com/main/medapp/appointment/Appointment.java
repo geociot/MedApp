@@ -1,6 +1,7 @@
-package com.main.med_app.entities;
+package com.main.medapp.appointment;
 
-import com.main.med_app.enums.AppointmentStatus;
+import com.main.medapp.medical_specialist.MedicalSpecialist;
+import com.main.medapp.patient.Patient;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -13,7 +14,7 @@ public class Appointment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
-    @ManyToOne
+    @ManyToOne()
     @JoinColumn(name = "medical_specialist_id")
     MedicalSpecialist medicalSpecialist;
 

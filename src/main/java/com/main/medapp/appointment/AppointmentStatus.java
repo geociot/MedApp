@@ -1,4 +1,4 @@
-package com.main.med_app.enums;
+package com.main.medapp.appointment;
 
 public enum AppointmentStatus {
     FREE,PENDING,APPROVED;

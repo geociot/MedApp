@@ -1,4 +1,4 @@
-package com.main.med_app;
+package com.main.medapp;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

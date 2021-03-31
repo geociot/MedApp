@@ -1,4 +1,4 @@
-package com.main.med_app.entities;
+package com.main.medapp.location;
 
 import javax.persistence.*;
 
@@ -16,7 +16,7 @@ public class Location {
         return id;
     }
 
-    public void setId() {
+    public void setId(Long id) {
         this.id = id;
     }
 

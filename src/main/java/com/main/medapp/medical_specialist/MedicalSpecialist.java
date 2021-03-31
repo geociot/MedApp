@@ -1,5 +1,5 @@
-package com.main.med_app.entities;
-import com.main.med_app.enums.Speciality;
+package com.main.medapp.medical_specialist;
+import com.main.medapp.location.Location;
 
 import javax.persistence.*;
 
